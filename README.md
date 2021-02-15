@@ -11,15 +11,15 @@ Projekt stworzony w ramach przedmiotu Repetytorium z programowania. Aplikacja do
 <details>
   <summary>Rozwiń</summary>
   <p align="center">
-    ### ![login](/img/login.PNG?raw=true)  
-    ### ![register](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/register.PNG)    
-    ### ![home](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/home.PNG)    
-    ### ![movies](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/movies.PNG)    
-    ### ![moviesDetails](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/moviesDetails.PNG)    
-    ### ![seats](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/seats.PNG)    
-    ### ![success](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/success.PNG)    
-    ### ![mail](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/mail.PNG)    
-    ### ![myreservations](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/myreservations.PNG)    
-    ### ![adminPanel](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/adminPanel.PNG)    
+    ### ![login](/img/login.PNG?raw=true)     
+    ### ![register](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/register.PNG)      
+    ### ![home](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/home.PNG)       
+    ### ![movies](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/movies.PNG)       
+    ### ![moviesDetails](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/moviesDetails.PNG)       
+    ### ![seats](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/seats.PNG)      
+    ### ![success](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/success.PNG)         
+    ### ![mail](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/mail.PNG)      
+    ### ![myreservations](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/myreservations.PNG)      
+    ### ![adminPanel](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/adminPanel.PNG)      
   </p>  
 </details>

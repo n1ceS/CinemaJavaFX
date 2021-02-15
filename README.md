@@ -9,9 +9,6 @@ Projekt stworzony w ramach przedmiotu Repetytorium z programowania. Aplikacja do
 
 # [SCREENY]
 ### ![login](/img/login.PNG?raw=true)  
-<details>
-  <summary>Rozwiń</summary>
-<p>
 ### ![login](/img/login.PNG?raw=true)    
 ### ![diagrams raw](https://github.com/n1ceS/MNE-EEG-Analysis/blob/master/img/diagrams-raw.png)         
 ### ![register](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/register.PNG)      
@@ -23,5 +20,3 @@ Projekt stworzony w ramach przedmiotu Repetytorium z programowania. Aplikacja do
 ### ![mail](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/mail.PNG)      
 ### ![myreservations](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/myreservations.PNG)      
 ### ![adminPanel](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/adminPanel.PNG)       
-<p>
-</details>

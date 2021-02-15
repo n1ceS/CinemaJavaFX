@@ -10,16 +10,14 @@ Projekt stworzony w ramach przedmiotu Repetytorium z programowania. Aplikacja do
 # [SCREENY]
 <details>
   <summary>Rozwiń</summary>
-    ### ![login](/img/login.PNG?raw=true)    
-    ### ![diagrams raw](https://github.com/n1ceS/MNE-EEG-Analysis/blob/master/img/diagrams-raw.png)   
-    <br />
-    ### ![register](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/register.PNG)      
-    ### ![home](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/home.PNG)       
-    ### ![movies](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/movies.PNG)       
-    ### ![moviesDetails](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/moviesDetails.PNG)       
-    ### ![seats](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/seats.PNG)      
-    ### ![success](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/success.PNG)         
-    ### ![mail](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/mail.PNG)      
-    ### ![myreservations](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/myreservations.PNG)      
-    ### ![adminPanel](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/adminPanel.PNG)       
+### ![login](/img/login.PNG?raw=true)    
+### ![register](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/register.PNG)      
+### ![home](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/home.PNG)       
+### ![movies](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/movies.PNG)       
+### ![moviesDetails](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/moviesDetails.PNG)       
+### ![seats](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/seats.PNG)      
+### ![success](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/success.PNG)         
+### ![mail](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/mail.PNG)      
+### ![myreservations](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/myreservations.PNG)      
+### ![adminPanel](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/adminPanel.PNG)       
 </details>

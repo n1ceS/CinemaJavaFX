@@ -12,6 +12,7 @@ Projekt stworzony w ramach przedmiotu Repetytorium z programowania. Aplikacja do
   <summary>Rozwiń</summary>
   <p align="center">
     ### ![login](/img/login.PNG?raw=true)     
+    <br />
     ### ![register](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/register.PNG)      
     ### ![home](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/home.PNG)       
     ### ![movies](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/movies.PNG)       

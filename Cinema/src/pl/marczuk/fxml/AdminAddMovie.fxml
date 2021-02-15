@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addMovieAnchorPane" prefHeight="800.0" prefWidth="826.0" style="-fx-background-color: #39004d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.marczuk.controllers.AdminAddMovieController">
+   <children>
+      <TextField fx:id="titleTextField" layoutX="299.0" layoutY="110.0" prefHeight="33.0" prefWidth="237.0" styleClass="input-field" stylesheets="@../style/style.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutY="67.0" prefHeight="43.0" prefWidth="826.0" text="Tytuł" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="yearTextField" layoutX="298.0" layoutY="207.0" prefHeight="33.0" prefWidth="237.0" styleClass="input-field" stylesheets="@../style/style.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="164.0" prefHeight="43.0" prefWidth="826.0" text="Rok" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lengthTextField" layoutX="298.0" layoutY="306.0" prefHeight="33.0" prefWidth="237.0" styleClass="input-field" stylesheets="@../style/style.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="6.0" layoutY="263.0" prefHeight="43.0" prefWidth="826.0" text="Długość filmu" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="categoryTextField" layoutX="299.0" layoutY="404.0" prefHeight="33.0" prefWidth="237.0" styleClass="input-field" stylesheets="@../style/style.css">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="6.0" layoutY="361.0" prefHeight="43.0" prefWidth="826.0" text="Kategoria" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="301.0" layoutY="739.0" onMouseClicked="#addMovie" prefHeight="39.0" prefWidth="237.0" style="-fx-background-color: #730099;" text="Dodaj" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="360.0" layoutY="698.0" onMouseClicked="#loadMovieImage" prefHeight="33.0" prefWidth="121.0" style="-fx-background-color: #269e0b;" text="Wybierz obraz" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXTextArea fx:id="descriptionTextArea" focusColor="WHITE" layoutX="231.0" layoutY="483.0" prefHeight="185.0" prefWidth="374.0" style="-fx-text-fill: #FFF;" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextArea>
+      <ImageView fx:id="movieImage" fitHeight="300.0" fitWidth="200.0" layoutX="19.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true" />
+      <Label alignment="CENTER" layoutX="-6.0" layoutY="455.0" prefHeight="43.0" prefWidth="826.0" text="Opis" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="765.0" text="Label" />
+      <Label fx:id="choosedImageLabel" layoutX="68.0" layoutY="455.0" text="Wybrany obraz:" textFill="WHITE" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="titleErrorLabel" alignment="CENTER" layoutX="296.0" layoutY="150.0" prefHeight="17.0" prefWidth="249.0" text="Tytuł nie może być pusty!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="yearErrorLabel" alignment="CENTER" layoutX="292.0" layoutY="247.0" prefHeight="17.0" prefWidth="249.0" text="Rok musi być liczbą z przedziału 1900-2021!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lengthErrorLabel" alignment="CENTER" layoutY="346.0" prefHeight="17.0" prefWidth="832.0" text="Długość musi być liczbą większą od zera!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="categoryErrorLabel" alignment="CENTER" layoutX="292.0" layoutY="447.0" prefHeight="17.0" prefWidth="249.0" text="Kategoria nie może być pusta!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="imageAndTextAreaErrorLabel" alignment="CENTER" layoutX="295.0" layoutY="674.0" prefHeight="17.0" prefWidth="249.0" text="Opis nie może być pusty!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="750.0" onMouseClicked="#backToMovies" text="Powrót" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutY="1.0" prefHeight="58.0" prefWidth="832.0" style="-fx-background-color: #730099;" text="DODAWANIE FILMU" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

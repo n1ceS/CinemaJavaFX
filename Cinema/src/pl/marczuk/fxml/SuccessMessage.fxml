@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="successWindowAnchorPane" prefHeight="800.0" prefWidth="826.0" style="-fx-background-color: #39004d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.marczuk.controllers.SuccessController">
+   <children>
+      <Label fx:id="successHeader" alignment="CENTER" layoutY="82.0" prefHeight="32.0" prefWidth="826.0" text="Gratulacje! Udało Ci się poprawnie zarezerwować bilet!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="successContent" alignment="CENTER" layoutX="3.0" layoutY="114.0" prefHeight="32.0" prefWidth="826.0" text="Na twoją skrzynkę mailową została wysłana wiadomość." textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="403.0" fitWidth="559.0" layoutX="137.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dashboard/succes_reservation.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="confirmButton" layoutX="315.0" layoutY="682.0" onMouseClicked="#loadHome" prefHeight="51.0" prefWidth="204.0" ripplerFill="WHITE" style="-fx-background-color: #730099; -fx-background-radius: 0;" text="Kontynuuj" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

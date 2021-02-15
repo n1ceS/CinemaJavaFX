@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="seancesAnchorPane" prefHeight="800.0" prefWidth="826.0" style="-fx-background-color: #39004d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.marczuk.controllers.SeancesManagerController">
+   <children>
+      <ImageView fx:id="emptyTableImage" fitHeight="378.0" fitWidth="464.0" layoutX="188.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/dashboard/empty_table.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="emptyTableLabel" alignment="CENTER" layoutY="192.0" prefHeight="53.0" prefWidth="826.0" text="Nic tu nie ma." textFill="WHITE" visible="false">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="seanceTable" layoutX="14.0" layoutY="51.0" prefHeight="746.0" prefWidth="832.0" stylesheets="@../style/style.css">
+         <columns>
+            <TableColumn fx:id="movieId" editable="false" minWidth="0.0" prefWidth="0.0" sortable="false" text="id" visible="false" />
+            <TableColumn fx:id="titleMovie" editable="false" minWidth="0.0" prefWidth="285.0" resizable="false" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Film" />
+            <TableColumn fx:id="dateSeance" editable="false" prefWidth="245.0" resizable="false" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Dzień" />
+            <TableColumn fx:id="hourSeance" minWidth="0.0" prefWidth="296.0" resizable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Godzina" />
+         </columns>
+      </TableView>
+      <Label layoutX="376.0" layoutY="14.0" text="Seanse" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="addButton" layoutX="41.0" layoutY="19.0" onMouseClicked="#addSeance" style="-fx-background-color: #269e0b;" text="Dodaj" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="deleteButton" layoutX="188.0" layoutY="19.0" onMouseClicked="#deleteSeance" style="-fx-background-color: #940d0d;" text="Usuń" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="editButton" layoutX="113.0" layoutY="19.0" onMouseClicked="#editSeance" style="-fx-background-color: #e06b12;" text="Edytuj" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

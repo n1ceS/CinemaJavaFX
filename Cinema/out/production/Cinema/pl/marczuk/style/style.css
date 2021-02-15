@@ -1,0 +1,106 @@
+.input-field{
+  -fx-text-inner-color: #FFF;
+  -fx-background-color: transparent;
+  -fx-text-fill: #FFF;
+  -fx-border-color: #FFF;
+  -fx-border-width: 0 0 1 0;
+  -fx-prompt-text-fill: #FFF;
+}
+.input-field:focused{
+  -fx-border-width: 0 0 2.5 0;
+  -fx-font-weight: bold;
+  -fx-text-inner-color: #FFF;
+  -fx-text-fill: #FFF;
+  -fx-prompt-text-fill: #FFF;
+}
+
+.table-row-cell:odd:filled{
+  -fx-background-color: #3c1361;
+}
+
+.table-row-cell:even:filled{
+  -fx-background-color: #52307c;
+}
+
+.table-row-cell:filled:selected{
+  -fx-background-color: #9570DD;
+}
+
+.table-row-cell{
+  -fx-table-cell-border-color: transparent;
+}
+
+.table-cell, .table-cell .label{
+  -fx-text-fill: white;
+}
+
+.table-row-cell:empty{
+  -fx-background-color: #39004d;
+}
+
+.table-view, .table-view:focused{
+  -fx-border-color: transparent;
+  -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+  -fx-background-color: transparent;
+  -fx-border-color:transparent white transparent transparent;
+  -fx-border-width:0.1;
+  -fx-text-fill: white;
+}
+.table-view .column-header .label {
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+.table-view .column-header-background{
+  -fx-background-color: #39004d;
+}
+
+.navbar .button:hover{
+  -fx-background-color: yellow;
+}
+
+.toggle-button:selected {
+  -fx-background-color: firebrick;
+}
+
+.toggle-button{
+  -fx-background-color: white;
+}
+
+.toggle-button:disabled {
+  -fx-background-color: grey;
+}
+
+.image-border {
+  -fx-border-width: 1;
+  -fx-border-color: #fff;
+}
+.jfx-date-picker .text-field{
+  -jfx-unfocus-color: grey;
+  -fx-prompt-text-fill: white;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-font-size: 20;
+}
+.jfx-time-picker .text-field{
+  -jfx-unfocus-color: grey;
+  -fx-prompt-text-fill: white;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-font-size: 20;
+}
+.jfx-combo-box {
+  -fx-background-color: #39004d;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-font-size: 15;
+}
+
+.jfx-combo-box .cell {
+  -fx-background-color: #39004d;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-font-size: 15;
+}

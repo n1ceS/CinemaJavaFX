@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ticketsAnchorPane" prefHeight="800.0" prefWidth="826.0" style="-fx-background-color: #39004d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.marczuk.controllers.TicketsController">
+   <children>
+      <ImageView fx:id="emptyTableImage" fitHeight="378.0" fitWidth="464.0" layoutX="188.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/dashboard/empty_table.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="emptyTableLabel" alignment="CENTER" layoutY="192.0" prefHeight="53.0" prefWidth="826.0" text="Nic tu nie ma." textFill="WHITE" visible="false">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ticketsTable" layoutX="-6.0" layoutY="54.0" prefHeight="746.0" prefWidth="832.0" stylesheets="@../style/style.css">
+         <columns>
+            <TableColumn fx:id="titleMovie" editable="false" minWidth="0.0" prefWidth="270.0" resizable="false" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Tytuł" />
+            <TableColumn fx:id="lengthMovie" editable="false" prefWidth="87.0" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Długość" />
+            <TableColumn fx:id="dateMovie" editable="false" minWidth="0.0" prefWidth="177.0" resizable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Data" />
+            <TableColumn fx:id="selectedSeats" editable="false" prefWidth="137.0" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Wybrane Miejsca" />
+            <TableColumn fx:id="status" editable="false" prefWidth="155.0" resizable="false" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Status" />
+            <TableColumn fx:id="movieId" editable="false" minWidth="0.0" prefWidth="0.0" sortable="false" text="id" visible="false" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" prefHeight="17.0" prefWidth="826.0" style="-fx-background-color: #730099;" text="TWOJE REZERWACJE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

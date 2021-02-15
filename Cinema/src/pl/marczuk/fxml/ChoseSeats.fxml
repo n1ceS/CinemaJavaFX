@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="chooseSeatsAnchorPane" prefHeight="800.0" prefWidth="804.0" style="-fx-background-color: #39004d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.marczuk.controllers.ChoseSeatsController">
+   <children>
+      <ImageView fitHeight="53.0" fitWidth="50.0" layoutX="628.0" layoutY="552.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="greySeat" url="@../images/seat/seatFree_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="50.0" layoutX="628.0" layoutY="599.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="greenSeat" url="@../images/seat/seatSelected_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="53.0" fitWidth="50.0" layoutX="629.0" layoutY="645.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="redSeat" url="@../images/seat/reservedSeat_icon.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="seatsPane" alignment="CENTER" layoutX="51.0" layoutY="80.0" prefHeight="465.0" prefWidth="707.0" style="-fx-background-color: #730099;">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="A1" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A11" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A112" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A122" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A140" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A13" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A12" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A113" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A123" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A141" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A131" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A14" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A114" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A124" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A142" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A132" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A15" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A115" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A125" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A143" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A133" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A16" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A116" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A126" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A144" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A134" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A17" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A117" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A127" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A145" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A135" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A18" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A118" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A128" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="A146" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A136" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="7">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A19" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A119" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A129" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A147" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A137" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A110" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A120" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A130" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A148" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A138" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="9">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A111" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A121" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A139" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="9">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="A149" fitHeight="54.0" fitWidth="50.0" onMouseClicked="#addSeat" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9">
+               <image>
+                  <fx:reference source="greySeat" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" layoutX="329.0" layoutY="14.0" text="Rezerwacja miejsc" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="568.0" prefWidth="147.0" text="Film:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="601.0" text="Data:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="635.0" text="Wybrane miejsca: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="bookButton" layoutX="628.0" layoutY="743.0" mnemonicParsing="false" onMouseClicked="#bookReservation" prefHeight="42.0" prefWidth="147.0" style="-fx-background-color: #ac00e6; -fx-background-radius: 0;" text="Rezerwuję" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="backButton" alignment="CENTER" layoutX="14.0" layoutY="764.0" onMouseClicked="#backToMovieDetails" text="Powrót" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="movieTitleLabel" layoutX="65.0" layoutY="568.0" prefHeight="25.0" prefWidth="738.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateMovieLabel" layoutX="65.0" layoutY="601.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="chosenSeatsLabel" layoutX="160.0" layoutY="635.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="685.0" layoutY="656.0" text="- zajęte" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="684.0" layoutY="610.0" text="- wybrane" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="684.0" layoutY="563.0" text="- wolne" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-5.0" layoutY="86.0" prefHeight="27.0" prefWidth="57.0" text="A" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-5.0" layoutY="134.0" prefHeight="27.0" prefWidth="57.0" text="B" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-5.0" layoutY="180.0" prefHeight="27.0" prefWidth="57.0" text="C" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-5.0" layoutY="227.0" prefHeight="27.0" prefWidth="57.0" text="D" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-5.0" layoutY="275.0" prefHeight="27.0" prefWidth="57.0" text="E" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-5.0" layoutY="321.0" prefHeight="27.0" prefWidth="57.0" text="F" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="368.0" prefHeight="27.0" prefWidth="57.0" text="G" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="415.0" prefHeight="27.0" prefWidth="57.0" text="H" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="460.0" prefHeight="27.0" prefWidth="57.0" text="I" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="508.0" prefHeight="27.0" prefWidth="57.0" text="J" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="92.0" layoutY="44.0" prefHeight="27.0" prefWidth="57.0" text="1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="234.0" layoutY="44.0" prefHeight="27.0" prefWidth="57.0" text="2" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="376.0" layoutY="44.0" prefHeight="27.0" prefWidth="57.0" text="3" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="518.0" layoutY="44.0" prefHeight="27.0" prefWidth="57.0" text="4" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="659.0" layoutY="44.0" prefHeight="27.0" prefWidth="57.0" text="5" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="402.0" layoutY="751.0" prefHeight="26.0" prefWidth="216.0" text="WYBIERZ JAKIEŚ MIEJSCE!" textFill="#d72929" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="644.0" layoutY="701.0" prefHeight="50.0" prefWidth="115.0">
+         <children>
+            <Circle fx:id="firstCircle" fill="#1f93ff00" radius="9.0" stroke="#ac00e6" strokeType="INSIDE" strokeWidth="5.0">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Circle>
+            <Circle fx:id="secondCircle" fill="#1f93ff00" radius="9.0" stroke="#ac00e6" strokeType="INSIDE" strokeWidth="5.0">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Circle>
+            <Circle fx:id="thirdCircle" fill="#1f93ff00" radius="9.0" stroke="#ac00e6" strokeType="INSIDE" strokeWidth="5.0">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Circle>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

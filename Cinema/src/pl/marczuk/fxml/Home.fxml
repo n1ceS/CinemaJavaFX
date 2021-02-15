@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardAnchorPane" prefHeight="800.0" prefWidth="826.0" style="-fx-background-color: #39004d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.marczuk.controllers.HomeController">
+   <children>
+      <AnchorPane layoutX="51.0" layoutY="58.0" prefHeight="270.0" prefWidth="200.0" style="-fx-background-color: #730099; -fx-opacity: 0.7;" />
+      <ImageView fx:id="promotedMovie1Image" fitHeight="236.0" fitWidth="313.0" layoutX="71.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dashboard/promoted_movie1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="302.0" layoutY="58.0" prefHeight="270.0" prefWidth="200.0" style="-fx-background-color: #730099; -fx-opacity: 0.7;" />
+      <ImageView fx:id="promotedMovie2Image" fitHeight="236.0" fitWidth="240.0" layoutX="323.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dashboard/promoted_movie2.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="promotedMovie1Title" alignment="CENTER" layoutX="1.0" layoutY="341.0" prefHeight="27.0" prefWidth="296.0" text="Titanic (1997)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="promotedMovie1Category" alignment="CENTER" layoutX="51.0" layoutY="374.0" prefHeight="17.0" prefWidth="200.0" text="Romans/Dramat" textFill="WHITE" />
+      <Label fx:id="promotedMovie2Title" alignment="CENTER" layoutX="253.0" layoutY="341.0" prefHeight="27.0" prefWidth="296.0" text="Gdzie jest Nemo? (2003)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="promotedMovie2Category" alignment="CENTER" layoutX="302.0" layoutY="374.0" prefHeight="17.0" prefWidth="200.0" text="Familijny/Przygodowy" textFill="WHITE" />
+      <Button fx:id="bookTicketPromoted2" layoutX="318.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#loadDetails" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: #11698e; -fx-background-radius: 0;" text="Zamów bilet" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="bookTicketPromoted1" layoutX="74.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#loadDetails" prefHeight="29.0" prefWidth="159.0" style="-fx-background-color: #11698e; -fx-background-radius: 0;" text="Zamów bilet" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="promotedMovie3Title" alignment="CENTER" layoutX="503.0" layoutY="341.0" prefHeight="27.0" prefWidth="296.0" text="Więcej niż myślisz(2020)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="promotedMovie3Category" alignment="CENTER" layoutX="553.0" layoutY="374.0" prefHeight="17.0" prefWidth="200.0" text="Komediodramat" textFill="WHITE" />
+      <Button fx:id="bookTicketPromoted3" layoutX="569.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#loadDetails" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: #11698e; -fx-background-radius: 0;" text="Zamów bilet" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="553.0" layoutY="425.0" prefHeight="17.0" prefWidth="200.0" text="Wolne miejsca: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="543.0" layoutY="400.0" prefHeight="17.0" prefWidth="139.0" text="Data: " textFill="WHITE" />
+      <AnchorPane layoutX="553.0" layoutY="58.0" prefHeight="270.0" prefWidth="200.0" style="-fx-background-color: #730099; -fx-opacity: 0.7;">
+         <children>
+            <ImageView fx:id="promotedMovie3Image" fitHeight="242.0" fitWidth="169.0" layoutX="17.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/dashboard/promoted_movie3.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="promotedMovie3FreeSeats" alignment="CENTER" layoutX="677.0" layoutY="426.0" prefHeight="20.0" prefWidth="68.0" text="0" textFill="#27b53d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="promotedMovie3Date" alignment="CENTER" layoutX="615.0" layoutY="400.0" prefHeight="17.0" prefWidth="112.0" text="18.01.2021 20:00" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="302.0" layoutY="428.0" prefHeight="17.0" prefWidth="200.0" text="Wolne miejsca: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="292.0" layoutY="403.0" prefHeight="17.0" prefWidth="139.0" text="Data: " textFill="WHITE" />
+      <Label fx:id="promotedMovie2FreeSeats" alignment="CENTER" layoutX="426.0" layoutY="429.0" prefHeight="20.0" prefWidth="68.0" text="8" textFill="#27b53d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="promotedMovie2Date" alignment="CENTER" layoutX="364.0" layoutY="403.0" prefHeight="17.0" prefWidth="112.0" text="18.01.2021 20:00" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="45.0" layoutY="431.0" prefHeight="17.0" prefWidth="200.0" text="Wolne miejsca: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="35.0" layoutY="406.0" prefHeight="17.0" prefWidth="139.0" text="Data: " textFill="WHITE" />
+      <Label fx:id="promotedMovie1FreeSeats" alignment="CENTER" layoutX="169.0" layoutY="432.0" prefHeight="20.0" prefWidth="68.0" text="38" textFill="#27b53d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="promotedMovie1Date" alignment="CENTER" layoutX="79.0" layoutY="406.0" prefHeight="17.0" prefWidth="169.0" text="18.01.2021 20:00" textFill="WHITE" />
+      <Label alignment="CENTER" layoutY="501.0" prefHeight="17.0" prefWidth="826.0" style="-fx-background-color: #730099;" text="KONTAKT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="209.0" fitWidth="262.0" layoutX="482.0" layoutY="559.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dashboard/cinema_location.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="125.0" layoutY="559.0" text="Adres" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="589.0" prefHeight="27.0" prefWidth="200.0" text="ul. Jana Pawła II 4" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="616.0" prefHeight="27.0" prefWidth="200.0" text="21-300 Nowe Miasto" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="17.0" prefWidth="826.0" style="-fx-background-color: #730099;" text="POLECANE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="84.0" layoutY="559.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dashboard/location_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="84.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dashboard/telephone_icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="125.0" layoutY="655.0" text="Telefon" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="685.0" prefHeight="27.0" prefWidth="200.0" text="+48 123 456 789" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="82.0" layoutY="711.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dashboard/email_icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="125.0" layoutY="712.0" text="Email" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="742.0" prefHeight="27.0" prefWidth="200.0" text="adres@oranzeria.pl" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

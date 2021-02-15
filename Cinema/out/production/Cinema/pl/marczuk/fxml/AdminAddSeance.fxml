@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addSeanceAnchorPane" prefHeight="800.0" prefWidth="826.0" style="-fx-background-color: #39004d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.marczuk.controllers.AdminAddSeanceController">
+   <children>
+      <JFXButton layoutX="301.0" layoutY="739.0" onMouseClicked="#addSeance" prefHeight="39.0" prefWidth="237.0" style="-fx-background-color: #730099;" text="Dodaj" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="219.0" layoutY="750.0" onMouseClicked="#backToSeances" text="Powrót" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXComboBox fx:id="movieComboBox" focusColor="WHITE" layoutX="221.0" layoutY="117.0" prefHeight="31.0" prefWidth="396.0" stylesheets="@../style/style.css" unFocusColor="WHITE" />
+      <Label alignment="CENTER" layoutX="290.0" layoutY="85.0" prefHeight="32.0" prefWidth="261.0" text="Film" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="movieErrorLabel" alignment="CENTER" layoutX="294.0" layoutY="152.0" prefHeight="17.0" prefWidth="261.0" text="Wybierz film!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="286.0" layoutY="192.0" prefHeight="32.0" prefWidth="267.0" text="Data" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateErrorLabel" alignment="CENTER" layoutX="294.0" layoutY="275.0" prefHeight="17.0" prefWidth="261.0" text="Wybierz datę!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="datePicker" defaultColor="#ac00e6" layoutX="294.0" layoutY="224.0" prefWidth="261.0" style="-fx-prompt-text-fill: #FFF; -fx-text-fill: #FFF;" stylesheets="@../style/style.css" />
+      <Label alignment="CENTER" layoutX="290.0" layoutY="294.0" prefHeight="32.0" prefWidth="261.0" text="Godzina" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="hourErrorLabel" alignment="CENTER" layoutX="294.0" layoutY="376.0" prefHeight="24.0" prefWidth="261.0" text="Wybierz godzinę!" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTimePicker fx:id="hourTimePicker" defaultColor="#ac00e6" layoutX="294.0" layoutY="326.0" prefHeight="28.0" prefWidth="261.0" style="-fx-prompt-text-fill: #FFF; -fx-text-fill: #FFF;" stylesheets="@../style/style.css" />
+      <Label alignment="CENTER" layoutX="-6.0" prefHeight="58.0" prefWidth="832.0" style="-fx-background-color: #730099;" text="DODAWANIE SEANSU" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

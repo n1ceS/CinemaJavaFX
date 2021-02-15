@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="moviesAnchorPane" prefHeight="800.0" prefWidth="826.0" style="-fx-background-color: #39004d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.marczuk.controllers.MoviesController">
+   <children>
+      <ImageView fx:id="emptyTableImage" fitHeight="378.0" fitWidth="464.0" layoutX="188.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/dashboard/empty_table.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="emptyTableLabel" alignment="CENTER" layoutY="192.0" prefHeight="53.0" prefWidth="826.0" text="Nic tu nie ma." textFill="WHITE" visible="false">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="movieTable" layoutX="-6.0" layoutY="54.0" onMousePressed="#getDetails" prefHeight="746.0" prefWidth="832.0" stylesheets="@../style/style.css">
+        <columns>
+            <TableColumn editable="false" minWidth="0.0" prefWidth="0.0" sortable="false" text="id" visible="false" />
+          <TableColumn fx:id="imageMovie" editable="false" prefWidth="192.0" sortable="false" />
+          <TableColumn fx:id="titleMovie" editable="false" minWidth="0.0" prefWidth="191.0" resizable="false" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Tytuł" />
+            <TableColumn fx:id="categoryMovie" editable="false" prefWidth="163.0" resizable="false" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Kategoria" />
+            <TableColumn fx:id="hourMovie" editable="false" minWidth="0.0" prefWidth="156.0" resizable="false" sortType="DESCENDING" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Data" />
+            <TableColumn fx:id="freeSeatsMovie" editable="false" prefWidth="124.0" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Wolne Miejsca" />
+            <TableColumn fx:id="movieId" editable="false" minWidth="0.0" prefWidth="0.0" sortable="false" text="id" visible="false" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="22.0" text="Data:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="datePicker" defaultColor="#ac00e6" layoutX="59.0" layoutY="13.0" onAction="#loadMoviesToTable" prefHeight="44.0" prefWidth="221.0" style="-fx-fill-text: #fff;" stylesheets="@../style/style.css" />
+   </children>
+</AnchorPane>

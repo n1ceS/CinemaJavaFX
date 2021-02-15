@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="moviesManagerAnchorPane" prefHeight="800.0" prefWidth="826.0" style="-fx-background-color: #39004d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.marczuk.controllers.MoviesManagerController">
+   <children>
+      <ImageView fx:id="emptyTableImage" fitHeight="378.0" fitWidth="464.0" layoutX="188.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/dashboard/empty_table.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="emptyTableLabel" alignment="CENTER" layoutY="192.0" prefHeight="53.0" prefWidth="826.0" text="Nic tu nie ma." textFill="WHITE" visible="false">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="movieManagerTable" layoutX="-6.0" layoutY="54.0" prefHeight="746.0" prefWidth="832.0" stylesheets="@../style/style.css">
+         <columns>
+            <TableColumn fx:id="imageMovie" editable="false" prefWidth="181.0" sortable="false" />
+            <TableColumn fx:id="titleMovie" editable="false" minWidth="0.0" prefWidth="186.0" resizable="false" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Tytuł" />
+            <TableColumn fx:id="yearMovie" editable="false" minWidth="0.0" prefWidth="87.0" resizable="false" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Rok" />
+            <TableColumn fx:id="descriptionMovie" editable="false" prefWidth="116.0" resizable="false" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Opis" />
+            <TableColumn fx:id="categoryMovie" editable="false" prefWidth="175.0" sortable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Kategoria" />
+            <TableColumn fx:id="lengthMovie" editable="false" style="-fx-alignment: CENTER; -fx-font-weight: bold; -fx-font-size: 15;" text="Długość" />
+            <TableColumn fx:id="movieId" editable="false" minWidth="0.0" prefWidth="0.0" sortable="false" text="id" visible="false" />
+         </columns>
+      </TableView>
+      <Label layoutX="376.0" layoutY="14.0" text="Filmy" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="addButton" layoutX="41.0" layoutY="19.0" onMouseClicked="#addMovieButton" style="-fx-background-color: #269e0b;" text="Dodaj" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="deleteButton" layoutX="188.0" layoutY="19.0" onMouseClicked="#deleteMovie" style="-fx-background-color: #940d0d;" text="Usuń" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="editButton" layoutX="113.0" layoutY="19.0" onMouseClicked="#editMovie" style="-fx-background-color: #e06b12;" text="Edytuj" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

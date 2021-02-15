@@ -8,9 +8,11 @@ Projekt stworzony w ramach przedmiotu Repetytorium z programowania. Aplikacja do
 
 
 # [SCREENY]
+### ![login](/img/login.PNG?raw=true)  
 <details>
   <summary>Rozwiń</summary>
 ### ![login](/img/login.PNG?raw=true)    
+### ![diagrams raw](https://github.com/n1ceS/MNE-EEG-Analysis/blob/master/img/diagrams-raw.png)         
 ### ![register](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/register.PNG)      
 ### ![home](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/home.PNG)       
 ### ![movies](https://github.com/n1ceS/CinemaJavaFX/blob/main/img/movies.PNG)       
